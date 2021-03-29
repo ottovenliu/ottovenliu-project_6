@@ -17,7 +17,6 @@ app.config['SECRET_KEY'] = os.urandom(24)
 
 @app.route("/", methods=['GET', 'POST'])
 def cindex():
-    # session.clear()
     return render_template("homePage.html")
 
 
