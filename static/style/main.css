@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.userTable{
+    flex: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-direction: column;
+}
+.signInBox{
+    flex: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-direction: column;
+    height: 200px;
+    max-height: 200px;
+}
+.signUpBox{
+    flex: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-direction: column;
+    height: 200px;
+    max-height: 200px;
+}
+.userInfo{
+    flex: none;
+    width: 400px;   
+    text-align: center;
+}
+.signButton{
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
