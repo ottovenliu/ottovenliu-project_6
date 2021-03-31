@@ -12,9 +12,9 @@ mycursor = mydb.cursor()
 sql = "SELECT * FROM user"
 mycursor.execute(sql)
 myresult = mycursor.fetchall()
-# print(myresult[0][2])
-# print(myresult[0])
-# print(myresult)
+print(myresult[0][2])
+print(myresult[0])
+print(myresult)
 print("------------------分界線1--------------------")
 # print(type(myresult))
 
@@ -36,9 +36,9 @@ userDataBox = []
 for i in myresult:
     userDataBox.append(i[2])
 print("------------------分界線3--------------------")
-name = "謝瑞蓮"
-username = "小蓮花"
-password = "456"
+name = "劉碩亭"
+username = "444"
+password = "444"
 if username in userDataBox:
     pId = userDataBox.index(username)
     if password == myresult[pId][3]:
