@@ -19,6 +19,8 @@ main{
     height: 200px;
     max-height: 200px;
 }
+
+
 .signUpBox{
     flex: none;
     display: flex;
@@ -32,6 +34,8 @@ main{
     flex: none;
     width: 400px;   
     text-align: center;
+    padding: 5px;
+    margin: 5px;
 }
 .signButton{
     flex: none;

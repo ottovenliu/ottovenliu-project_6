@@ -10,7 +10,8 @@ import os
 
 app = Flask(
     __name__,
-    static_url_path="/"
+    static_url_path="/static",
+    static_folder="static"
 )
 
 app.config['SECRET_KEY'] = os.urandom(24)
