@@ -43,7 +43,8 @@ def check():
     userDataBox = []
 
     mycursor = mydb.cursor()
-    sql = "SELECT * FROM user"
+    sql = "SELECT * FROM user WHERE username = {username}".format(
+        username=Account)
     mycursor.execute(sql)
     myresult = mycursor.fetchall()
 
@@ -67,7 +68,8 @@ def signup():
     userDataBox = []
 
     mycursor = mydb.cursor()
-    sql = "SELECT * FROM user"
+    sql = "SELECT * FROM user WHERE username = {username}".format(
+        username=signup_username)
     mycursor.execute(sql)
     myresult = mycursor.fetchall()
     for i in myresult:
