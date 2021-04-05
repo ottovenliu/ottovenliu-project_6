@@ -20,7 +20,7 @@ app.config['SECRET_KEY'] = os.urandom(24)
 mydb = mysql.connector.Connect(
     host="localhost",
     user="user",
-    password="lf187935",
+    password="123456",
     database="website"
 )
 
